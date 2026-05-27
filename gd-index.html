@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GD Resume AI Ultra</title>
+
+<link rel="stylesheet" href="gd-style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+
+<div class="particles"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+GD Resume AI
+</div>
+
+<div class="nav-links">
+
+<a href="#">Dashboard</a>
+<a href="#">ATS</a>
+<a href="#">AI Engine</a>
+<a href="#">Hiring</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="left-panel">
+
+<h1>
+
+AI Resume <br>
+Analyzer Ultra
+
+</h1>
+
+<p>
+
+Advanced AI-powered ATS Resume Screening Platform with futuristic analytics dashboard and intelligent hiring engine.
+
+</p>
+
+<label for="resumeInput" class="upload-box">
+
+<div class="upload-icon">
+📄
+</div>
+
+<h2>
+Drag & Drop Resume
+</h2>
+
+<span>
+Supports PDF / Multi-page Resume
+</span>
+
+<input type="file" id="resumeInput" accept="application/pdf">
+
+</label>
+
+<button onclick="analyzeResume()" class="analyze-btn">
+
+Analyze Resume
+
+</button>
+
+<!-- LOADING -->
+
+<div class="loading-box" id="loadingBox">
+
+<div class="loader"></div>
+
+<h3 id="loadingText">
+
+Initializing AI Engine...
+
+</h3>
+
+</div>
+
+<!-- ANALYSIS -->
+
+<div class="analysis-box" id="analysisBox">
+
+<!-- PDF PREVIEW -->
+
+<h2 class="section-title">
+
+Resume Preview
+
+</h2>
+
+<iframe id="pdfViewer"></iframe>
+
+<!-- CARDS -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>ATS Score</h3>
+
+<div class="score" id="score">
+94%
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Resume Quality</h3>
+
+<div class="score">
+A+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Hiring Chance</h3>
+
+<div class="score">
+High
+</div>
+
+</div>
+
+</div>
+
+<!-- ATS RING -->
+
+<h2 class="section-title">
+
+ATS Compatibility Meter
+
+</h2>
+
+<div class="ring-container">
+
+<div class="ring">
+
+<div class="ring-inner" id="ringScore">
+
+94%
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SKILLS -->
+
+<h2 class="section-title">
+
+AI Detected Skills
+
+</h2>
+
+<div class="tags">
+
+<div class="tag">HTML</div>
+<div class="tag">CSS</div>
+<div class="tag">JavaScript</div>
+<div class="tag">React</div>
+<div class="tag">Python</div>
+<div class="tag">AI/ML</div>
+<div class="tag">SQL</div>
+<div class="tag">NLP</div>
+
+</div>
+
+<!-- SUGGESTIONS -->
+
+<h2 class="section-title">
+
+AI Suggestions
+
+</h2>
+
+<div class="tags">
+
+<div class="tag">Add Internship Experience</div>
+<div class="tag">Improve ATS Keywords</div>
+<div class="tag">Optimize Projects Section</div>
+<div class="tag">Add Cloud Technologies</div>
+
+</div>
+
+<!-- JOB MATCH -->
+
+<h2 class="section-title">
+
+Job Match Analysis
+
+</h2>
+
+<div class="job-box">
+
+<div class="job">
+Google <span>82%</span>
+</div>
+
+<div class="job">
+Microsoft <span>76%</span>
+</div>
+
+<div class="job">
+Amazon <span>79%</span>
+</div>
+
+<div class="job">
+TCS <span>95%</span>
+</div>
+
+</div>
+
+<!-- STRENGTH -->
+
+<h2 class="section-title">
+
+Resume Strength
+
+</h2>
+
+<div class="meter">
+
+<div class="fill"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="right-panel">
+
+<div class="dashboard">
+
+<h2>
+
+AI Backend Logs
+
+</h2>
+
+<div class="logs" id="logs">
+
+<p>✔ Initializing NLP Engine...</p>
+<p>✔ Connecting ATS Database...</p>
+<p>✔ Resume Parsing Active...</p>
+<p>✔ Running AI Match Algorithm...</p>
+<p>✔ Generating Hiring Insights...</p>
+
+</div>
+
+</div>
+
+<div class="dashboard center">
+
+<h2>
+AI Match Engine
+</h2>
+
+<div class="circle">
+
+94%
+
+</div>
+
+</div>
+
+<div class="dashboard">
+
+<h2>
+System Features
+</h2>
+
+<p>
+
+• AI ATS Score <br>
+• Resume Parsing <br>
+• NLP Skill Extraction <br>
+• Hiring Recommendation <br>
+• Job Matching <br>
+• AI Dashboard Analytics
+
+</p>
+
+</div>
+
+<div class="dashboard">
+
+<h2>
+AI HR Assistant
+</h2>
+
+<div class="assistant">
+
+"Your resume is ATS optimized but adding internship experience can improve recruiter selection chances."
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+GD Resume AI Ultra • Developed by Gautam Dharviya • 2026
+
+</footer>
+
+<script src="gd-script.js"></script>
+
+</body>
+</html>
